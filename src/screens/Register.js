@@ -26,7 +26,7 @@ const RegisterScreen = ({navigation}) => {
   const [error, setError] = useState('');
   const [isValid, setValid] = useState(false);
   const __doSignUp = () => {
-    navigation.navigate('LogIn');
+    navigation.navigate('Login');
     // const emailRegex = /^[^@ ]+@[^@ ]+\.[^@ ]+$/;
     // const __isValidEmail = emailRegex.test(email);
     // if (!email) {
@@ -46,7 +46,7 @@ const RegisterScreen = ({navigation}) => {
   };
 
   const __doCreateUser = async (email, password) => {
-    navigation.navigate('LogIn');
+    navigation.navigate('Login');
     // try {
     //   let response = await auth().createUserWithEmailAndPassword(
     //     email,
